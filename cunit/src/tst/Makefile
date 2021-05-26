@@ -1,6 +1,6 @@
 include ../../etc/Makefile
 
-MODULE_NAME = cucase
+MODULE_NAME = cu_tst
 MODULE_OBJ  = $(patsubst %.c, %.o, $(wildcard *.c))
 
 MODULE_LIB  = ${WORKDIR}/lib/lib${MODULE_NAME}.a

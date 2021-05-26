@@ -1,5 +1,5 @@
 WORKDIR    = /home/jimmy/democ/cunit
-LUTILDIR   = 
+#LUTILDIR   = /usr/local
 
 CC         = gcc
 CFLAG      = -g -Wall -fPIC -I${WORKDIR}/include 
@@ -21,9 +21,9 @@ CLEANFILES = *.o
 BINDIR     = ${WORKDIR}/bin
 LIBDIR     = ${WORKDIR}/lib
 
-MODULECFLGS= -g -Wall -fPIC -I${WORKDIR}/include
-DBCFLGS    = -g -Wall -fPIC -I${WORKDIR}/include -I./  
-LUTILCFLGS = -I${LUTILDIR}/include
+MODULECFLGS= -g -Wall -fPIC -I${WORKDIR}/include 
+DBCFLGS    = -g -Wall -fPIC -I${WORKDIR}/include -I.
+#LUTILCFLGS = -I${LUTILDIR}/include -I${LUTILDIR}/include/CUnit
 
 CFLAGS     = ${CFLAG} ${MODULECFLGS} ${DBCFLGS}  ${LUTILCFLGS}
 

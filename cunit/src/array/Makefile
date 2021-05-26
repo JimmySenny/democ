@@ -1,6 +1,6 @@
 include ../../etc/Makefile
 
-MODULE_NAME = array
+MODULE_NAME = cu_array
 MODULE_OBJ  = $(patsubst %.c, %.o, $(wildcard *.c))
 
 MODULE_LIB  = ${WORKDIR}/lib/lib${MODULE_NAME}.a
